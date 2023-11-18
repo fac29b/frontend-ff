@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <label id="keyState" for="apiKey">Enter your API key:</label>
+    <input type="password" id="apiKey" placeholder="FUCKYOU">
+    <button id="keyButton" onclick="storeApiKey()">Submit</button>
+
+    <textarea id="input" placeholder="Ask your question here" required>?</textarea>
+    <button id="submit" onclick="submit()">Submit</button>
+    <p id="display"></p>
+    <p id="response">Answer here</p>
+</body>
+<script src="script.js"></script>
+</html>
