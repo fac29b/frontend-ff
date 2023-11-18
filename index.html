@@ -7,14 +7,22 @@
     <title>Document</title>
 </head>
 <body>
-    <label id="keyState" for="apiKey">Enter your API key:</label>
-    <input type="password" id="apiKey" placeholder="FUCKYOU">
-    <button id="keyButton" onclick="storeApiKey()">Submit</button>
+    
+    <div class="keyInput">
+        <p>Enter Key Manually:</p>
+        <label id="keyState" for="apiKey">Enter your API key:</label>
+        <input type="password" id="apiKey" placeholder="FUCKYOU">
+        <button id="keyButton" onclick="storeApiKey()">Submit</button>
+        <p>Enter Key from .env file</p>
+        <button id="envKey">Enter Key</button>
+    </div>
+
+
 
     <textarea id="input" placeholder="Ask your question here" required>?</textarea>
     <button id="submit" onclick="submit()">Submit</button>
-    <p id="display"></p>
-    <p id="response">Answer here</p>
+    <p class="textBoxes" id="display"></p>
+    <p class="textBoxes" id="response">Answer here</p>
 </body>
 <script src="script.js"></script>
 </html>
